@@ -23,19 +23,35 @@
     <ClCompile Include="DummyEntity.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Idle.cpp" />
+    <ClCompile Include="Life.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Plant.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="PVZScene.cpp" />
     <ClCompile Include="SampleScene.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Shoot.cpp" />
+    <ClCompile Include="State.cpp" />
     <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Zombie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Debug.h" />
     <ClInclude Include="DummyEntity.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Idle.h" />
+    <ClInclude Include="Life.h" />
+    <ClInclude Include="Plant.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="PVZScene.h" />
     <ClInclude Include="SampleScene.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Shoot.h" />
+    <ClInclude Include="State.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="Zombie.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entity.inl" />

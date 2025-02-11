@@ -7,6 +7,9 @@
     <Filter Include="Sample">
       <UniqueIdentifier>{656b759f-efb2-4f59-b546-0dd585a90074}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PVZ">
+      <UniqueIdentifier>{5bf24c54-9308-4722-88e2-e4f8ab1f7293}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entity.cpp">
@@ -31,6 +34,24 @@
     <ClCompile Include="SampleScene.cpp">
       <Filter>Sample</Filter>
     </ClCompile>
+    <ClCompile Include="PVZScene.cpp">
+      <Filter>PVZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Plant.cpp">
+      <Filter>PVZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie.cpp">
+      <Filter>PVZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Life.cpp">
+      <Filter>PVZ</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>PVZ</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Idle.cpp" />
+    <ClCompile Include="Shoot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h">
@@ -54,6 +75,24 @@
     <ClInclude Include="SampleScene.h">
       <Filter>Sample</Filter>
     </ClInclude>
+    <ClInclude Include="PVZScene.h">
+      <Filter>PVZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Plant.h">
+      <Filter>PVZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie.h">
+      <Filter>PVZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Life.h">
+      <Filter>PVZ</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>PVZ</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Idle.h" />
+    <ClInclude Include="Shoot.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scene.inl">
