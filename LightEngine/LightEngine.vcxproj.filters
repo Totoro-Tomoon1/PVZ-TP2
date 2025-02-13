@@ -10,6 +10,15 @@
     <Filter Include="PVZ">
       <UniqueIdentifier>{5bf24c54-9308-4722-88e2-e4f8ab1f7293}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PVZ\State">
+      <UniqueIdentifier>{6e45cd97-476a-4ef5-9bac-5fe74a114877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PVZ\Bullet">
+      <UniqueIdentifier>{9ef53b84-ea5a-4ab2-b18e-33df620d23b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PVZ\Mob">
+      <UniqueIdentifier>{a70bb90e-2273-44ca-ac31-eb344f2a589c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entity.cpp">
@@ -37,21 +46,39 @@
     <ClCompile Include="PVZScene.cpp">
       <Filter>PVZ</Filter>
     </ClCompile>
-    <ClCompile Include="Plant.cpp">
-      <Filter>PVZ</Filter>
-    </ClCompile>
-    <ClCompile Include="Zombie.cpp">
-      <Filter>PVZ</Filter>
-    </ClCompile>
     <ClCompile Include="Life.cpp">
       <Filter>PVZ</Filter>
     </ClCompile>
-    <ClCompile Include="Projectile.cpp">
-      <Filter>PVZ</Filter>
+    <ClCompile Include="Idle.cpp">
+      <Filter>PVZ\State</Filter>
     </ClCompile>
-    <ClCompile Include="State.cpp" />
-    <ClCompile Include="Idle.cpp" />
-    <ClCompile Include="Shoot.cpp" />
+    <ClCompile Include="Shoot.cpp">
+      <Filter>PVZ\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Shoot_Special.cpp">
+      <Filter>PVZ\State</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>PVZ\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>PVZ\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Special_Bullet.cpp">
+      <Filter>PVZ\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Plant.cpp">
+      <Filter>PVZ\Mob</Filter>
+    </ClCompile>
+    <ClCompile Include="Plant_Classique.cpp">
+      <Filter>PVZ\Mob</Filter>
+    </ClCompile>
+    <ClCompile Include="Plant_Special1.cpp">
+      <Filter>PVZ\Mob</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie.cpp">
+      <Filter>PVZ\Mob</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity.h">
@@ -78,21 +105,39 @@
     <ClInclude Include="PVZScene.h">
       <Filter>PVZ</Filter>
     </ClInclude>
-    <ClInclude Include="Plant.h">
-      <Filter>PVZ</Filter>
-    </ClInclude>
-    <ClInclude Include="Zombie.h">
-      <Filter>PVZ</Filter>
-    </ClInclude>
     <ClInclude Include="Life.h">
       <Filter>PVZ</Filter>
     </ClInclude>
-    <ClInclude Include="Projectile.h">
-      <Filter>PVZ</Filter>
+    <ClInclude Include="Idle.h">
+      <Filter>PVZ\State</Filter>
     </ClInclude>
-    <ClInclude Include="State.h" />
-    <ClInclude Include="Idle.h" />
-    <ClInclude Include="Shoot.h" />
+    <ClInclude Include="Shoot.h">
+      <Filter>PVZ\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Shoot_Special.h">
+      <Filter>PVZ\State</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>PVZ\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>PVZ\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Special_Bullet.h">
+      <Filter>PVZ\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Plant.h">
+      <Filter>PVZ\Mob</Filter>
+    </ClInclude>
+    <ClInclude Include="Plant_Classique.h">
+      <Filter>PVZ\Mob</Filter>
+    </ClInclude>
+    <ClInclude Include="Plant_Special1.h">
+      <Filter>PVZ\Mob</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie.h">
+      <Filter>PVZ\Mob</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scene.inl">

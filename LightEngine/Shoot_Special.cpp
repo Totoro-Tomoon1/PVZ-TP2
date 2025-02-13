@@ -1,22 +1,21 @@
-#include "Shoot.h"
-#include "Plant.h"
+#include "Shoot_Special.h"
 #include "Zombie.h"
+#include <vector>
 #include "PVZScene.h"
-#include "Projectile.h"
-#include <iostream>
+#include "Plant.h"
+#include "Special_Bullet.h"
 
-Shoot::Shoot(Plant* plant, float cooldown) : State(plant)
+Shoot_Special::Shoot_Special(Plant* plant, float cooldown) : State(plant)
 {
 	mShootCooldown = cooldown;
 	mShootProgress = 0;
 }
 
-void Shoot::Start()
+void Shoot_Special::Start()
 {
-	//mShootProgress = mShootCooldown;
 }
 
-void Shoot::Update()
+void Shoot_Special::Update()
 {
 	mShootProgress -= mPlant->GetDeltaTime();
 
@@ -24,7 +23,7 @@ void Shoot::Update()
 	//std::cout << mZombie.size() << std::endl;
 
 	bool shoot = false;
-	
+
 	if (mZombie.size() > 0)
 		for (Zombie* zombie : mZombie)
 		{
@@ -36,6 +35,7 @@ void Shoot::Update()
 				shoot = true;
 			}
 		}
+
 	//std::cout << shoot << std::endl;
 
 	if (mShootProgress <= 0 && shoot)
@@ -59,9 +59,10 @@ void Shoot::Update()
 				shootDir = sf::Vector2f(mZombie[i]->GetPosition() - mPlant->GetPosition());
 			}
 		}
-		Projectile* bullet = mPlant->CreateEntity<Projectile>(10, sf::Color::Blue);
+		Special_Bullet* bullet = mPlant->CreateEntity<Special_Bullet>(10, sf::Color::Blue);
 		bullet->SetPosition(mPlant->GetPosition().x, mPlant->GetPosition().y);
 		bullet->SetTag(1);
+		bullet->SetLife(2);
 
 		int speed = 20;
 
